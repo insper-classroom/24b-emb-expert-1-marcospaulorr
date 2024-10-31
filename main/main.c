@@ -69,6 +69,6 @@ int main() {
 
     // Main loop does nothing, interrupt-driven
     while (true) {
-        __wfe(); // Wait for interrupt
+        tight_loop_contents(); // Idle loop that allows interrupts to run
     }
 }
