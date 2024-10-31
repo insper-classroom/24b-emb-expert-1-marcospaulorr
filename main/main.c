@@ -69,6 +69,6 @@ int main() {
 
     // Main loop does nothing, interrupt-driven
     while (true) {
-        __wfi(); // Wait for interrupt
+        __wfe(); // Wait for interrupt
     }
 }
